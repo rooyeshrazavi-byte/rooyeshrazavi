@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>کلینیک تخصصی پوست و مو رویش رضوی</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Vazirmatn',sans-serif;
+background:#f5fbff;
+color:#163b63;
+line-height:1.8;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+section{
+padding:90px 0;
+}
+
+h2{
+font-size:34px;
+margin-bottom:20px;
+text-align:center;
+color:#0d4f8b;
+}
+
+p{
+color:#555;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+border-radius:40px;
+background:#0d6efd;
+color:white;
+transition:.3s;
+font-weight:bold;
+margin:8px;
+}
+
+.btn:hover{
+background:#094dba;
+transform:translateY(-3px);
+}
+
+.btn-outline{
+background:white;
+color:#0d6efd;
+border:2px solid #0d6efd;
+}
+
+.btn-outline:hover{
+background:#0d6efd;
+color:white;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+box-shadow:0 3px 20px rgba(0,0,0,.08);
+z-index:999;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+height:75px;
+}
+
+.logo{
+font-size:28px;
+font-weight:900;
+color:#0d6efd;
+}
+
+.menu{
+display:flex;
+gap:25px;
+align-items:center;
+}
+
+.menu a{
+font-weight:600;
+transition:.3s
+
+.form-section{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+form{
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+form input,
+form select,
+form textarea{
+width:100%;
+padding:15px;
+margin-bottom:18px;
+border:1px solid #d7e5f4;
+border-radius:12px;
+font-family:inherit;
+font-size:15px;
+outline:none;
+transition:.3s;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus{
+border-color:#0d6efd;
+box-shadow:0 0 10px rgba(13,110,253,.15);
+}
+
+form textarea{
+height:140px;
+resize:none;
+}
+
+form button{
+width:100%;
+padding:16px;
+border:none;
+border-radius:12px;
+background:#0d6efd;
+color:white;
+font-size:17px;
+cursor:pointer;
+transition:.3s;
+}
+
+form button:hover{
+background:#084db8;
+}
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.review{
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.review .stars{
+color:#ffc107;
+margin-bottom:15px;
+font-size:20px;
+}
+
+.review h4{
+margin-top:18px;
+color:#0d4f8b;
+}
+
+.faq{
+max-width:900px;
+margin:auto;
+margin-top:40px;
+}
+
+.accordion{
+background:white;
+margin-bottom:15px;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.question{
+padding:22px;
+cursor:pointer;
+font-weight:bold;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.answer{
+display:none;
+padding:22px;
+border-top:1px solid #eee;
+color:#555;
+}
+
+footer{
+background:#0d4f8b;
+color:white;
+padding:50px 20px;
+text-align:center;
+}
+
+footer p{
+color:#d9e7f8;
+margin-top:12px;
+}
+
+.top-btn{
+position:fixed;
+left:25px;
+bottom:25px;
+width:50px;
+height:50px;
+background:#0d6efd;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+font-size:22px;
+cursor:pointer;
+display:none;
+box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+@media(max-width:900px){
+
+.hero{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.form-section{
+grid-template-columns:1fr;
+}
+
+.menu{
+display:none;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">
+🌿 رویش رضوی
+</div>
+
+<div class="menu">
+
+<a href="#home">خانه</a>
+
+<a href="#services">خدمات</a>
+
+<a href="#features">مزایا</a>
+
+<a href="#consult">مشاوره</a>
+
+<a href="#faq">سوالات</a>
+
+<a class="btn" href="#consult">
+رزرو مشاوره
+</a>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero container" id="home">
+
+<div>
+
+<h1>
+کلینیک تخصصی پوست، مو و زیبایی رویش رضوی
+</h1>
+
+<p>
+
+با بررسی دقیق علت ریزش مو و مشکلات پوست، برنامه درمانی اختصاصی برای هر مراجعه‌کننده ارائه می‌شود تا بهترین نتیجه در کوتاه‌ترین زمان حاصل شود.
+
+</p>
+
+<a href="#consult" class="btn">
+دریافت مشاوره
+</a>
+
+<a href="#services" class="btn btn-outline">
+مشاهده خدمات
+</a>
+
+</div>
+
+<div>
+
+<img src="razavi.jpg" alt="رویش رضوی">
+
+</div>
+
+</section>
+
+امیرمحمد رضوی | هوش مصنوعی و کسب‌وکار:
+<!-- ===== خدمات ===== -->
+
+<section id="services">
+
+<div class="container">
+
+<h2>
+خدمات کلینیک رویش رضوی
+</h2>
+
+<div class="services">
+
+<div class="card">
+<i class="fas fa-user"></i>
+<h3>درمان ریزش مو</h3>
+<p>
+بررسی علت ریزش مو و ارائه برنامه درمانی تخصصی برای بانوان و آقایان.
+</p>
+</div>
+
+<div class="card">
+<i class="fas fa-seedling"></i>
+<h3>تقویت و رویش مجدد مو</h3>
+<p>
+روش‌های علمی برای افزایش ضخامت، استحکام و رشد مجدد موها.
+</p>
+</div>
+
+<div class="card">
+<i class="fas fa-male"></i>
+<h3>درمان کم‌پشتی ریش</h3>
+<p>
+راهکارهای تخصصی جهت تقویت فولیکول‌های ریش و افزایش تراکم.
+</p>
+</div>
+
+<div class="card">
+<i class="fas fa-syringe"></i>
+<h3>مزوتراپی</h3>
+<p>
+تزریق مواد مغذی جهت تغذیه فولیکول‌ها و کاهش ریزش مو.
+</p>
+</div>
+
+<div class="card">
+<i class="fas fa-droplet"></i>
+<h3>PRP</h3>
+<p>
+استفاده از پلاسمای غنی از پلاکت برای تحریک رشد طبیعی مو.
+</p>
+</div>
+
+<div class="card">
+<i class="fas fa-spa"></i>
+<h3>مشاوره تخصصی پوست</h3>
+<p>
+ارزیابی مشکلات پوستی و ارائه برنامه مراقبتی متناسب با پوست شما.
+</p>
+</div>
+
+<div class="card">
+<i class="fas fa-heart"></i>
+<h3>مراقبت پوست و مو</h3>
+<p>
+آموزش روتین صحیح مراقبت و معرفی محصولات مناسب برای حفظ سلامت پوست و مو.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== مزایا ===== -->
+
+<section id="features">
+
+<div class="container">
+
+<h2>
+چرا رویش رضوی؟
+</h2>
+
+<div class="features">
+
+<div class="feature">
+<i class="fas fa-user-md"></i>
+<div>
+<h3>مشاوره تخصصی</h3>
+<p>بررسی کامل شرایط هر مراجعه‌کننده قبل از شروع درمان.</p>
+</div>
+</div>
+
+<div class="feature">
+<i class="fas fa-certificate"></i>
+<div>
+<h3>محصولات معتبر</h3>
+<p>استفاده از محصولات استاندارد و باکیفیت.</p>
+</div>
+</div>
+
+<div class="feature">
+<i class="fas fa-search"></i>
+<div>
+<h3>بررسی علت اصلی ریزش</h3>
+<p>درمان بر اساس علت، نه صرفاً کاهش علائم.</p>
+</div>
+</div>
+
+<div class="feature">
+<i class="fas fa-notes-medical"></i>
+<div>
+<h3>برنامه اختصاصی</h3>
+<p>نسخه درمانی متناسب با شرایط هر فرد.</p>
+</div>
+</div>
+
+<div class="feature">
+<i class="fas fa-headset"></i>
+<div>
+<h3>پشتیبانی درمان</h3>
+<p>پیگیری روند درمان و پاسخگویی به سوالات مراجعه‌کنندگان.</p>
+</div>
+</div>
+
+<div class="feature">
+<i class="fas fa-wallet"></i>
+<div>
+<h3>قیمت مناسب</h3>
+<p>خدمات حرفه‌ای با هزینه منطقی و شفاف.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== تخفیف ویژه ===== -->
+
+<section>
+
+<div class="container">
+
+<div class="offer">
+
+<h2>
+🎉 تخفیف ویژه مراجعه‌کنندگان جدید
+</h2>
+
+<p>
+
+🎁 مشاوره اولیه کاملاً رایگان
+
+<br><br>
+
+یا
+
+<br><br>
+
+🔥 ۲۰٪ تخفیف اولین مراجعه
+
+</p>
+
+<a href="#consult" class="btn btn-outline">
+
+همین حالا رزرو کنید
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== فرم مشاوره ===== -->
+
+<section id="consult">
+
+<div class="container">
+
+<h2>
+فرم درخواست مشاوره
+</h2>
+
+<div class="form-section">
+
+<div>
+
+<h3 style="margin-bottom:20px;color:#0d4f8b;">
+چرا فرم مشاوره را تکمیل کنید؟
+</h3>
+
+<p>
+پس از ثبت اطلاعات، کارشناسان کلینیک رویش رضوی وضعیت پوست و موی شما را بررسی کرده و مناسب‌ترین روش درمانی را پیشنهاد خواهند داد.
+</p>
+
+<br>
+
+<div class="feature">
+<i class="fas fa-check-circle"></i>
+<div>
+<p>بررسی اولیه کاملاً رایگان</p>
+</div>
+</div>
+
+<div class="feature">
+<i class="fas fa-check-circle"></i>
+<div>
+<p>پاسخگویی در کوتاه‌ترین زمان</p>
+</div>
+</div>
+
+<div class="feature">
+<i class="fas fa-check-circle"></i>
+<div>
+<p>برنامه درمانی اختصاصی</p>
+</div>
+</div>
+
+</div>
+
+<form id="consultForm">
+
+<input
+type="text"
+placeholder="نام و نام خانوادگی"
+required>
+
+<input
+type="tel"
+placeholder="شماره موبایل"
+required>
+
+<input
+type="number"
+placeholder="سن"
+required>
+
+<select required>
+
+<option value="">
+جنسیت
+</option>
+
+<option>
+آقا
+</option>
+
+<option>
+خانم
+</option>
+
+</select>
+
+<select required>
+
+<option value="">
+مشکل اصلی
+</option>
+
+<option>
+ریزش مو
+</option>
+
+<option>
+کم‌پشتی ریش
+</option>
+
+<option>
+مشکلات پوست
+</option>
+
+<option>
+مشاوره زیبایی
+</option>
+
+</select>
+
+<textarea
+placeholder="توضیحات بیشتر..."></textarea>
+
+<button type="submit">
+
+ارسال درخواست مشاوره
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== نظرات کاربران ===== -->
+
+<section>
+
+<div class="container">
+
+<h2>
+
+نظرات مراجعه‌کنندگان
+
+</h2>
+
+<div class="testimonials">
+
+<div class="review">
+
+<div class="stars">
+
+★★★★★
+
+</div>
+
+<p>
+
+بعد از چند ماه درمان، ریزش موهایم به شکل محسوسی کمتر شد و از نتیجه بسیار راضی هستم.
+
+</p>
+
+<h4>
+
+علی محمدی
+
+</h4>
+
+</div>
+
+<div class="review">
+
+<div class="stars">
+
+★★★★★
+
+</div>
+
+<p>
+
+مشاوره دقیق و برخورد حرفه‌ای باعث شد با خیال راحت درمانم را شروع کنم.
+
+</p>
+
+<h4>
+
+سمیه رضایی
+
+</h4>
+
+</div>
+
+<div class="review">
+
+<div class="stars">
+
+★★★★★
+
+</div>
+
+<p>
+
+برای درمان کم‌پشتی ریش مراجعه کردم و نتیجه بسیار بهتر از انتظارم بود.
+
+</p>
+
+<h4>
+
+محمد امینی
+
+</h4>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== سوالات متداول ===== -->
+
+<section id="faq">
+
+<div class="container">
+
+<h2>
+
+سوالات متداول
+
+</h2>
+
+<div class="faq">
+
+<div class="accordion">
+
+<div class="question">
+
+آیا مشاوره اولیه رایگان است؟
+
+<i class="fas fa-plus"></i>
+
+</div>
+
+<div class="answer">
+
+بله، مشاوره اولیه جهت بررسی شرایط شما کاملاً رایگان انجام می‌شود.
+
+</div>
+
+</div>
+
+<div class="accordion">
+
+<div class="question">
+
+نتیجه درمان چه مدت زمان می‌برد؟
+
+<i class="fas fa-plus"></i>
+
+</div>
+
+<div class="answer">
+
+مدت درمان به علت ریزش و شرایط فرد بستگی دارد و پس از ارزیابی مشخص می‌شود.
+
+</div>
+
+</div>
+
+<div class="accordion">
+
+<div class="question">
+
+آیا آقایان و بانوان می‌توانند مراجعه کنند؟
+
+<i class="fas fa-plus"></i>
+
+</div>
+
+<div class="answer">
+
+بله، خدمات کلینیک برای بانوان و آقایان ارائه می‌شود.
+
+</div>
+
+</div>
+
+<div class="accordion">
+
+<div class="question">
+
+آیا قبل از درمان نیاز به مشاوره است؟
+
+<i class="fas fa-plus"></i>
+
+</div>
+
+<div class="answer">
+
+بله، برای انتخاب بهترین روش درمان ابتدا وضعیت پوست و مو بررسی می‌شود.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== فوتر ===== -->
+
+<footer>
+
+<div class="container">
+
+<h2 style="color:white;">
+کلینیک تخصصی رویش رضوی
+</h2>
+
+<p>
+📞 شماره تماس: 09920742478
+</p>
+
+<p>
+📍 آدرس: تهران، خیابان سهروردی شمالی، پلاک ۶۴۷
+</p>
+
+<p>
+📷 اینستاگرام:
+<strong>@rooyesh_razavi</strong>
+</p>
+
+<p style="margin-top:25px;">
+© تمامی حقوق این وب‌سایت متعلق به کلینیک رویش رضوی است.
+</p>
+
+</div>
+
+</footer>
+
+<!-- ===== دکمه بازگشت ===== -->
+
+<div class="top-btn" id="topBtn">
+<i class="fas fa-arrow-up"></i>
+</div>
+
+<script>
+
+/* FAQ */
+
+document.querySelectorAll(".question").forEach(item=>{
+
+item.addEventListener("click",()=>{
+
+const answer=item.nextElementSibling;
+
+document.querySelectorAll(".answer").forEach(a=>{
+
+if(a!==answer){
+a.style.display="none";
+}
+
+});
+
+answer.style.display=
+answer.style.display==="block"
+?
+"none"
+:
+"block";
+
+});
+
+});
+
+
+/* فرم */
+
+document
+.getElementById("consultForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("درخواست مشاوره شما با موفقیت ثبت شد. کارشناسان رویش رضوی به زودی با شما تماس خواهند گرفت.");
+
+this.reset();
+
+});
+
+
+/* دکمه بازگشت */
+
+const topBtn=document.getElementById("topBtn");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>400){
+
+topBtn.style.display="flex";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+});
+
+
+topBtn.onclick=()=>{
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+
+/* افکت ظاهر شدن هنگام اسکرول */
+
+const cards=document.querySelectorAll(".card,.feature,.review");
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.opacity="1";
+
+entry.target.style.transform="translateY(0)";
+
+}
+
+});
+
+});
+
+cards.forEach(card=>{
+
+card.style.opacity="0";
+
+card.style.transform="translateY(40px)";
+
+card.style.transition=".7s";
+
+observer.observe(card);
+
+});
+
+</script>
+
+</body>
+
+</html>
